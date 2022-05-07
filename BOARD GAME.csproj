@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7B6744D-5DF7-40B8-B439-9458D178027E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BOARD_GAME</RootNamespace>
+    <AssemblyName>BOARD GAME</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Egg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Egg.designer.cs">
+      <DependentUpon>Egg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flappy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flappy.designer.cs">
+      <DependentUpon>Flappy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pacmann.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pacmann.designer.cs">
+      <DependentUpon>Pacmann.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Puzzle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puzzle.designer.cs">
+      <DependentUpon>Puzzle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz1.designer.cs">
+      <DependentUpon>Quiz1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz2.designer.cs">
+      <DependentUpon>Quiz2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz3.designer.cs">
+      <DependentUpon>Quiz3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz4.designer.cs">
+      <DependentUpon>Quiz4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shooter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shooter.designer.cs">
+      <DependentUpon>Shooter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="THE_BOARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THE_BOARD.Designer.cs">
+      <DependentUpon>THE_BOARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SnakeGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnakeGame.Designer.cs">
+      <DependentUpon>SnakeGame.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Egg.resx">
+      <DependentUpon>Egg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flappy.resx">
+      <DependentUpon>Flappy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pacmann.resx">
+      <DependentUpon>Pacmann.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puzzle.resx">
+      <DependentUpon>Puzzle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz1.resx">
+      <DependentUpon>Quiz1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz2.resx">
+      <DependentUpon>Quiz2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz3.resx">
+      <DependentUpon>Quiz3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz4.resx">
+      <DependentUpon>Quiz4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shooter.resx">
+      <DependentUpon>Shooter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="THE_BOARD.resx">
+      <DependentUpon>THE_BOARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SnakeGame.resx">
+      <DependentUpon>SnakeGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puzzle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tic-tac-toe-game-icon-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eggs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\06a6c5acc4aae5497338d4039141c67f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t_rex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flappy_bird.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flappy_bird.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hanoi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hanoi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hanoi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quiz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question_mark_PNG50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\580b585b2edbce24c47b27b0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\112-1127816_safe-clipart-safety-sign-smiley-face-speed-signs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25-258930_school-safety-clip-art-under-construction-sign-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\safety.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-monopoly-rich-uncle-pennybags-board-game-hasbro-fat-man-miscellaneous-game-angle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-monopoly-rich-uncle-pennybags-board-game-hasbro-fat-man-miscellaneous-game-angle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PinClipart.com_monopoly-clipart_25126 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5b63b4cd05980d9f17bb8243f1f600cf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treasure_chest_PNG41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monopoly-night-order-confirmation-eaa-chapter-838-monopoly-go-png-250_250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finishing-line-png-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\505-5057747_transparent-board-game-png-ludo-piece-png-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-vector-graphics-clip-art-encapsulated-postscript-j-joker-public-domain-batman-line-art-encapsulated-p-5d162f57e0f873.6617292315617349999215.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-joker-decal-sticker-joker-heroes-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joker-logo-1156305643214k7mw00ii.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-t-shirt-joker-it-clown-joker-5aca16a1b1d8e8.8786541115231935057285.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-the-joker-illustration-joker-harley-quinn-youtube-t-shirt-joker-heroes-text-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joker-harley-quinn-youtube-t-shirt-joker-thumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28-283446_scary-cartoon-clowns-scary-clown-face-cartoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-laughing-clown-head-cartoon-fictional-character-hair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3965367-middle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clown_PNG35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coinr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinkr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellowr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\null.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\original.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\null1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\original1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken_hurt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken_normal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bird.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buton z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pipe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pipedown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pipedown1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\babboujloud.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chellah.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koutoubia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menara.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fallguys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fortnite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gettingoverit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\valorant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\australie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bresil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-gif-maker %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turquie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\albaniadrap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\argentinedrap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\benindrap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\russiedrap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien_gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_img.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ship_gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stars_img.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shooter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
